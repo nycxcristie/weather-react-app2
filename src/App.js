@@ -14,7 +14,7 @@ function App() {
           height="80"
           width="80"
           radius={1}
-          color="blue"
+          color="yellow"
           ariaLabel="puff-loading"
           wrapperStyle={{}}
           wrapperClass=""
