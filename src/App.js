@@ -1,22 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Weather from "./Weather";
+import "./App.css";
+import { Puff } from "react-loader-spinner";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Hello World from React
+        <Weather city="New York" />
+        <br />
+        <Puff
+          height="80"
+          width="80"
+          radius={1}
+          color="#4fa94d"
+          ariaLabel="puff-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+        />
       </header>
     </div>
   );
